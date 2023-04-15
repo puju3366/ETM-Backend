@@ -1,0 +1,18 @@
+export function escape(value: any, stringifyObjects: any, timeZone: any): any;
+export function escapeId(value: any, forbidQualified: any): any;
+export function findAll(tablesAndJoin: any, fields: any, where: any, values: any): any;
+export function findAllWithCount(tablesAndJoin: any, countColumn: any, fields: any, where: any, additional: any, values: any): any;
+export function findRaw(rawQuery: any): any;
+export function first(tablesAndJoin: any, fields: any, where: any, values: any): any;
+export function format(sql: any, values: any, stringifyObjects: any, timeZone: any): any;
+export function init(options: any): void;
+export function initQuery(): any;
+export function insert(table: any, data: any): any;
+export function insertMany(table: any, data: any): any;
+export const lQ: string;
+export const lastQuery: string;
+export function query(query: any, values: any): any;
+export function replace(table: any, data: any): any;
+export function testConnecttion(): any;
+export function update(table: any, data: any, where: any, values: any): any;
+export function updateFirst(table: any, data: any, where: any, values: any): any;

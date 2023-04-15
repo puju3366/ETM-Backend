@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RightsRoute = void 0;
+const express_1 = require("express");
+const rightsController_1 = require("./rightsController");
+const middleware_1 = require("../../../middleware");
+const validate_1 = require("../../../validate");
+const rightsModel_1 = require("./rightsModel");
+const rightsController = new rightsController_1.RightsController();
+const middleware = new middleware_1.Middleware();
+const v = new validate_1.Validator();
+const router = express_1.Router();
+router.post("/create", v.validate(rightsModel_1.RightModel), middleware.checktoken, rightsController.create);
+router.get("/", middleware.checktoken, rightsController.getAll);
+router.get("/modules", middleware.checktoken, rightsController.getAllModule);
+router.get("/:id", middleware.checktoken, rightsController.getRightById);
+router.delete("/delete/:id", middleware.checktoken, rightsController.delete);
+router.patch("/edit/:id", v.validate(rightsModel_1.RightModel), middleware.checktoken, rightsController.update);
+exports.RightsRoute = router;
+//# sourceMappingURL=rightsRoutes.js.map

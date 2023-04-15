@@ -1,0 +1,1 @@
+{"version":3,"file":"dashboardSchema.js","sourceRoot":"","sources":["../../../../src/v1/modules/dashboard/dashboardSchema.ts"],"names":[],"mappings":";;;AAAC,uCAAmD;AACpD,mDAAgD;AAGhD,MAAM,eAAe,GAAG,IAAI,iBAAM,CAAC;IAE/B,aAAa,EAAE;QACX,IAAI,EAAE,MAAM;KACf;IAED,QAAQ,EAAE;QACN,IAAI,EAAE,MAAM;KACf;CAEJ,CAAC,CAAC;AAEU,QAAA,SAAS,GAAG,gBAAK,CAAC,eAAM,CAAC,SAAS,EAAE,eAAe,CAAC,CAAC"}
